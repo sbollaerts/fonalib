@@ -11,6 +11,5 @@ FONA_VERBOSE = True
 
 fona = Fona(FONA_PORT, FONA_SPEED, FONA_PIN, FONA_VERBOSE)
 if fona.status == Fona.STATUS_IDLE:
-        pass
-	# fona.send(PHONE_NUMBER, "Hello, World!")
+	fona.send(PHONE_NUMBER, "Hello, World!")
 print("+++ END-OF-EXECUTION +++") 
